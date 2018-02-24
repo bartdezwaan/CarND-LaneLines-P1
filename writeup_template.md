@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Pipeline description
 
 My pipeline consisted of 7 steps. 
 
@@ -42,12 +42,12 @@ The region of the image I want to look at is limited to a triange capturing most
 Left and right line lines are detected with the hough lines function. One important part in this step was adjusting the draw_lines() function
 
 ### draw_lines() function
-First a loop is started to loop over all edge detected lines.   
-I seperate left and right lane slopes and centers into seperate arrays.  
-When deciding if a lane should be added to the slopes and centers arrays I check for a reasonable slope. All others will be ignored.  
-After looping over all lines, the averages for the slopes and centers are calucated.  
-The center coordinates together with the slopes are used to calculate the x coordinates for the lines that start at 60 percent of the image height and end at the image height.  
-The calculated coordinates are used to draw the lane line onto the image.
+*First a loop is started to loop over all edge detected lines.   
+*I seperate left and right lane slopes and centers into seperate arrays.  
+*When deciding if a lane should be added to the slopes and centers arrays I check for a reasonable slope. All others will be ignored.  
+*After looping over all lines, the averages for the slopes and centers are calucated.  
+*The center coordinates together with the slopes are used to calculate the x coordinates for the lines that start at 60 percent of the image height and end at the image height.  
+*The calculated coordinates are used to draw the lane line onto the image.
 
 #### step 7
 Overlay left lane and right lane image on original image
